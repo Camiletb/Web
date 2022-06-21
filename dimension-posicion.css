@@ -1,0 +1,40 @@
+/* Dimensión */
+.container-block {
+  display: block; /* Con display:block se asegura que el contenedor tenga el ancho completo */
+  width: 200px; /* Pero si añadimos dimensiones fijas, el contenedor tendrá estas nuevas medidas */
+}
+
+.container-inline-block {
+  display: inline-block; /* Con display:inline-block las dimensiones dependen del contenido */
+  width: 200px; /* Pero si añadimos dimensiones fijas, el contenedor tendrá estas nuevas medidas, y si cabe, estará al lado del elemento contiguo */
+}
+.container-inline {
+    display: inline; /* Con display:inline las dimensiones dependen del contenido, y si cabe, estará al lado del elemento contiguo */
+}
+
+/* Posición */
+.container-absolute {
+  position: absolute; /* Con position:absolute se asegura que el contenedor esté situado en la posición indicada */
+  top: 250px;
+  left: 0px;
+}
+.container-static {
+  position: static; /* La posición no cambia respecto al html */
+  top: 250px;
+  left: 0px;
+}
+.container-relative {
+  position: relative; /* El cambio de posición respecto a su posición normal */
+  top: 250px;
+  left: 0px;
+}
+.container-fixed {
+  position: fixed; /* La posición no cambia aunque hagamos scroll */
+  top: 250px;
+  left: 0px;
+}
+.container-sticky {
+  position: sticky; /* Evolución de fixed */
+  top: 250px;
+  left: 0px;
+}
