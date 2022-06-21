@@ -1,0 +1,18 @@
+/* Definimos nuestras fuentes con @font-face */
+@font-face {
+    font-family: 'Camiletb';
+    src: url('fonts/Camiletb.ttf'),
+        url('fonts/Camiletb.eot'),
+        url('fonts/Camiletb.svg');
+    font-style: normal;
+}
+h1{
+    font-family: 'Camiletb';
+    font-size: 30px;
+    font-weight: bold;
+}
+p{
+    font-family: 'Camiletb';
+    font-size: 15px;
+    opacity: 0.5;
+}
