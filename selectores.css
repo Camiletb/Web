@@ -1,0 +1,87 @@
+/* 1 Selectores */
+/* 1.1 Pseudoclases por eventos */
+a:link{ /* enlace sin visitar */
+    color: #000;
+    text-decoration: none;
+}
+a:visited{ /* enlace visitado */
+    color: #222;
+    text-decoration: none;
+}
+a:hover{ /* enlace al pasar el ratón por encima */
+    color: #444;
+    text-decoration: underline;
+}
+a:active{ /* enlace activo */
+    color: #888;
+    text-decoration: none;
+}
+button:focus{ /* botón con foco */
+    outline: none;
+}
+
+/* 1.2 Por id */
+body{ /*Elemento*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.contenedor{ /*Clase*/
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+}
+#titulo{ /*Id*/
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 1.3 Por posición */
+/* Descendiente: */
+#titulo h1{ 
+    width: 100%;
+    height: 50px;
+}
+/* Hijo*/
+h1>span{
+    width: 100%;
+    height: 50px;
+}
+/* Adyacente */
+h1+p{
+    width: 100%;
+    height: 50px;
+}
+/*Posición dentro del árbol*/
+li:before{ /* Antes del elemento actual, por ejemplo*/
+    content: "";
+    width: 100%;
+    height: 50px;
+}
+
+/*1.4 Por atributos */
+/* Clase */
+p.clase{
+    width: 100%;
+    height: 50px;
+}
+/* Id */
+p#id{
+    width: 100%;
+    height: 50px;
+}
+/* Atributo */
+p[atributo]{
+    width: 100%;
+    height: 50px;
+}
+/* Atributo y valor */
+p[atributo="valor"]{
+    width: 100%;
+    height: 50px;
+}
