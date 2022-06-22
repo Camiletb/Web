@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="fonts.css" rel="stylesheet">
+    <!-- <script src="main.js"></script> -->
+    <title>Apuntes de audio</title>
+</head>
+<body>
+    <h1>1 Audio</h1>
+    
+    
+    <audio autoplay controls loop muted preload="metadata" style="margin-bottom: 20px;">
+        <source src="media/song.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- <hr> -->
+    <br>
+    <button onclick="myToggleFunction()">Notas</button>
+    <script src="main.js"></script>
+    <div id="toggleable" style="display: none;">
+        
+        <!-- <h1>Notas</h1> -->
+        <div id="atributos">
+            <h3>Algunos atributos</h3>
+            <p>Atributos booleanos (no necesitan valor adicional):</p>
+            <ul>
+                <li><code>autoplay</code></li>
+                <li><code>controls</code></li>
+                <li><code>loop</code></li>
+                <li><code>muted</code></li>
+            </ul>
+            <p>Valores del atributo preload:</p>
+            <ul>
+                <li data-toggle="tool-tip" title="Para que decide el navegador si precargar el fichero"><code>auto</code></li>
+                <li data-toggle="tool-tip" title="Para que se cargue al darle al play"><code>metadata</code></li>
+            <li data-toggle="tool-tip" title="Para que no se haga precarga"><code>none</code></li>
+        </ul>
+        
+    </div>
+    <div id="formatos">
+        <h3>Algunos formatos de audio</h3>
+        <ul>
+            <li data-toggle="tool-tip" title="Formato comprimido para no consumir mucho ancho de banda. ">.ogg</li>
+            <li data-toggle="tool-tip" title="También con compresión">.mp3</li>
+            <li data-toggle="tool-tip" title="Conocido como .mp4. Sustituye al mp3 usando compresión pero con mayor calidad.">.acc</li>
+            <li data-toggle="tool-tip" title="Sin compresión, con gran calidad de audio, pero consume mucho ancho de banda">.wav</li>
+        </ul>
+        
+    </p>
+    </div>
+</div>
+<hr>
+<button href="video.html" class="btn-next">Vídeo</button>
+<footer>Camiletb</footer>
+</body>
+</html>

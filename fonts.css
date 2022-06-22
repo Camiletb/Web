@@ -1,0 +1,19 @@
+/* Definimos nuestras fuentes con @font-face */
+@font-face {
+    font-family: 'JetBrains Mono', monospace;
+    src: url('fonts/JetBrainsMonoNL-Regular.ttf');
+    font-style: normal;
+}
+h1{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 30px;
+    font-weight: bold;
+}
+p{
+    font-family: 'JetBrains Mono';
+    /* font-size: 15px; */
+    /* opacity: 0.5; */
+}
+body{
+    font-family: 'JetBrains Mono', monospace;
+}

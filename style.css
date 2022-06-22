@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'JetBrains Mono', monospace;
+    src: url('fonts/JetBrainsMonoNL-Regular.ttf');
+    font-style: normal;
+}
+
+body{
+    padding: 15%;
+    overflow: hidden;
+    background-color: #204060;
+    color: aliceblue;
+}
+hr{
+    margin: 5%;
+    visibility: hidden;
+}
+code{
+    /* color:crimson; */
+    color:papayawhip;
+    /* color: palevioletred; */
+}
+footer{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color:papayawhip;
+}
+button{
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    border-style: hidden;
+    /* background-color:palegoldenrod; */
+    background-color:palevioletred;
+    color: aliceblue;
+    /* font-family: 'JetBrains Mono', monospace; */
+}
+button:hover{
+    background-color: palegoldenrod;
+    color: #204060;
+}
+.btn-next{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    background-color:lightskyblue;
+    color: #204060;
+}
+.btn-prev{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    background-color: lightskyblue;
+    color: #204060;
+}
