@@ -13,13 +13,13 @@
     <h1>1 Audio</h1>
     
     
-    <audio autoplay controls loop muted preload="metadata" style="margin-bottom: 20px;">
+    <audio autoplay controls loop muted preload="metadata">
         <source src="media/song.mp3" type="audio/mp3">
     </audio>
 
     <!-- <hr> -->
     <br>
-    <button onclick="myToggleFunction()">Notas</button>
+    <button onclick="myToggleFunction()" class="notas">Notas</button>
     <script src="main.js"></script>
     <div id="toggleable" style="display: none;">
         
@@ -54,7 +54,7 @@
     </div>
 </div>
 <hr>
-<button onclick="window.location.href='video.html'" class="btn-next">Vídeo</button>
-<footer>Camiletb</footer>
+<button onclick="window.location.href='video.html'" class="btn-next">Vídeo &gt;</button>
+<footer class="end">Camiletb</footer>
 </body>
 </html>

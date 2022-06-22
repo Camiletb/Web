@@ -6,7 +6,7 @@
 
 body{
     padding: 15%;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: #204060;
     color: aliceblue;
 }
@@ -19,7 +19,7 @@ code{
     color:papayawhip;
     /* color: palevioletred; */
 }
-footer{
+.end{
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -33,7 +33,10 @@ button{
     /* background-color:palegoldenrod; */
     background-color:palevioletred;
     color: aliceblue;
-    /* font-family: 'JetBrains Mono', monospace; */
+    font-family: 'JetBrains Mono', monospace;
+}
+.notas{
+    margin:15px;
 }
 button:hover{
     background-color: palegoldenrod;
