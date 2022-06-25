@@ -12,19 +12,23 @@
 <body>
     <h1>2 Vídeo</h1>
     <h2>Mediante la etiqueta <code>&lt;iframe&gt;</code></h2>
-    <iframe src="https://www.youtube.com/embed/0kj_0tJ4Euc" width="500" height="200"></iframe>
+    <iframe src="https://www.youtube.com/embed/0kj_0tJ4Euc" width="500" height="200" frameborder="0" allowfullscreen></iframe>
     
     <!-- <hr> -->
     <br>
     <button onclick="myToggleFunction()" class="notas">Notas</button>
     <script src="main.js"></script>
     <div id="toggleable" style="display: none;">
-        <p><code>&lt;iframe&gt;</code> nos permite incrustar documentos html, vídeos y reproductores de audio en línea, mapas... entre otros.</p>
+        <p><code>&lt;iframe&gt;</code> nos permite incrustar documentos html, vídeos y reproductores de audio en línea, mapas, revistas... entre otros.</p>
         
     <!-- <h1>Notas</h1> -->
         <div id="atributos">
             <h3>Algunos atributos</h3>
             <p>La etiqueta <code>&lt;iframe&gt;</code> contiene los atributos vistos en audio, pero también los usados para cambiar las dimensiones del vídeo.</p>
+            <ul>
+                <li>frameborder="0" para quitar el borde del marco</li>
+                <li>allowfullscreen para permitir el tamaño a pantalla completa</li>
+            </ul>
         </div>
         <div id="formatos">
             <h3>Algunos formatos de audio</h3>
@@ -38,7 +42,7 @@
     </div>
     <hr>
     <button onclick="window.location.href='video.html'" class="btn-prev">&lt; Video</button>
-    <button onclick="window.location.href='video.html'" class="btn-next">Next &gt;</button>
+    <button onclick="window.location.href='form.html'" class="btn-next">Formulario &gt;</button>
     <footer class="end">Camiletb</footer>
 </body>
 </html>

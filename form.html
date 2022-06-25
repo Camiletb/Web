@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="fonts.css" rel="stylesheet">
+    <!-- <script src="main.js"></script> -->
+    <title>Apuntes de vídeo</title>
+</head>
+<body>
+    <h1>3 Formulario</h1>
+    <p>Con la etiqueta <code>&lt;center&gt;</code> podemos centrar cualquier elemento, como este formulario:</p>
+    <center>
+        <h3>Título del formulario</h3>
+        <form>
+            <label for="texto">Esta es la etiqueta <code>&lt;label&gt;</code></label>
+            <input id="texto" type="text" placeholder="Input tipo &quot;text&quot;" value="">
+            <br>
+            <br>
+
+            <label for="correo" data-toggle="tool-tip" title="Si pones un texto que no sea un correo, nos va a dar una alerta de que el input no es válido.">Email</label>
+            <input id="correo" type="email" placeholder="ejemplo@placeholder.com" value="">
+            <br>
+            <br>
+
+            <label for="pass" data-toggle="tool-tip" title="No te muestra qué estás escribiendo.">Contraseña</label>
+            <input id="pass" type="password" placeholder="password" value="">
+            <br>
+            <br>
+
+            <label for="num" data-toggle="tool-tip" title="Mínimo y máximo definidos.">Nº</label>
+            <input id="num" type="number" value="5" min="0" max="10">
+            
+            <label for="sel" data-toggle="tool-tip" title="">Selección</label>
+            <select id="sel">
+                <option>Opción 1</option>
+                <option>Opción 2</option>
+                <option> Opción 3</option>
+            </select>
+            
+            
+        </form>
+    </center>
+    <!-- <hr> -->
+    <br>
+    <button onclick="myToggleFunction()" class="notas">Notas</button>
+    <script src="main.js"></script>
+    <div id="toggleable" style="display: none;">
+    <!-- <h1>Notas</h1> -->
+        <div id="atributos">
+            <h3>Algunos atributos</h3>
+            <p>Existen varios tipos de inputs, como por ejemplo, <code>text</code>.</p>
+            <p>Otro atributo es <code>placeholder</code>, usado para guiar al ususario con el tipo de información que debe introducir (nombre, apellidos, teléfono...)</p>
+            <p>Todo lo que yo escriba quedará almacenado en el atributo <code>value</code>, que vale vecío por defecto a no ser que pongamos nosotros un valor.</p>
+            <p>Si pusiéramos el atributo <code>readonly</code> no se podría cambiar el valor.</p>
+            <p>La etiqueta <code>&lt;label&gt;</code> se usa para poner un título al input que acompaña. Con el atributo <code>for</code>, con el valor del id del elemento con el que se enlaza (nuestro input). Así, clicando el label activamos el campo asociado.</p>
+        </div>
+    </div>
+    <hr>
+    <button onclick="window.location.href='video.html'" class="btn-prev">&lt; Video</button>
+    <button onclick="window.location.href='form.html'" class="btn-next">Next &gt;</button>
+    <footer class="end">Camiletb</footer>
+</body>
+</html>
