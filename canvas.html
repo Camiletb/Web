@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link href="canvas.css" rel="stylesheet">
     <link href="fonts.css" rel="stylesheet">
     <!-- <script src="main.js"></script> -->
     <title>Apuntes de canvas</title>
@@ -16,60 +17,14 @@
         <p>Esta web trabaja con javascript, si está desactivado, por favor, actívalo.</p>
     </noscript>
 
-    <h1>3 Formulario</h1>
-    <p>Con la etiqueta <code>&lt;center&gt;</code> podemos centrar cualquier elemento, como este formulario:</p>
+    <h1>4 Canvas</h1>
     <center>
-        <h3>Título del formulario</h3>
-        <form>
-            <!-- ENTRADA DE TEXTO -->
-            <label for="texto">Esta es la etiqueta <code>&lt;label&gt;</code></label>
-            <input id="texto" type="text" placeholder="Input tipo &quot;text&quot; (read only)" value="" readonly>
-            <br>
-            <br>
-
-            <!-- EMAIL -->
-            <label for="correo" data-toggle="tool-tip" title="Si pones un texto que no sea un correo, nos va a dar una alerta de que el input no es válido.">Email</label>
-            <input id="correo" type="email" placeholder="ejemplo@placeholder.com" value="" required>
-            <br>
-            <br>
-
-            <!-- CONTRASEÑA -->
-            <label for="pass" data-toggle="tool-tip" title="No te muestra qué estás escribiendo.">Contraseña</label>
-            <input id="pass" type="password" placeholder="password" value="">
-            <br>
-            <br>
-
-            <!-- ENTRADA NUMÉRICA -->
-            <label for="num" data-toggle="tool-tip" title="Mínimo y máximo definidos.">Nº</label>
-            <input id="num" type="number" value="5" min="0" max="10">
-            
-            <!-- SELECT -->
-            <label for="sel" data-toggle="tool-tip" title="">Selección</label>
-            <select id="sel">
-                <option>Opción 1</option>
-                <option>Opción 2</option>
-                <option>Opción 3</option>
-            </select>
-            <br>
-            <br>
-            
-            <!-- CHECKBOX -->
-            <input id="rcheck" type="checkbox"><label for="rcheck">Rojo</label>
-            <input id="gcheck" type="checkbox"><label for="gcheck">Verde</label>
-            <input id="bcheck" type="checkbox"><label for="bcheck">Azul</label>
-            <br>
-            <br>
-
-            <!-- RADIO -->
-            <input id="dradio" type="radio" name="radio" required><label for="dradio">día</label>
-            <input id="nradio" type="radio" name="radio" checked><label for="nradio">noche</label>
-            <br>
-            <br>
-
-            <!-- BOTÓN DE SUBMIT -->
-            <input type="submit" value="Nombre del botón de submit"
-
-        </form>
+        <h3>Canvas</h3>
+        <section id="seccion_canvas">
+            <canvas id="canvas_ejemplo" width="500" height="300">
+                Este mensaje aparece si no se soporta el elemento canvas.
+            </canvas>    
+        </section>
     </center>
     <!-- <hr> -->
     <br>
