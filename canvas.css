@@ -1,3 +1,24 @@
-canvas{
+/* canvas{
     border: 1px solid aliceblue;
+} */
+#canvas_ejemplo{
+    border: 1px solid aliceblue;
+}
+/* #vertical{
+    display: none;
+} */
+
+@media all and (orientation:portrait){
+    #canvas_ejemplo{
+        display: none;
+    }
+
+    #vertical{
+        display: block;
+        border: 1px solid crimson;
+    }
+}
+
+button{
+    cursor: pointer;
 }
