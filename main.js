@@ -4,6 +4,7 @@ navegadores de documentos gubernamentales, por seguridad.
 */
 var contenedor = document.querySelector("#seccion_canvas");
 var ampliarcanvas = document.querySelector("#canvas_ejemplo");
+var btnAmpliar = document.querySelector("#btnampliar")
 
 function myToggleFunction() {
   var x = document.getElementById("toggleable");
